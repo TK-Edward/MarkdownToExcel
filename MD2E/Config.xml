@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MarkdownToExcel>
+    <layout name="top">
+        <fixdSection startCell="A1">
+            <item id="title" cell="A1:D2" type="lbl">タイトル</item>
+            <item id="subTitle" cell="E1:I2">サブタイトル</item>
+            <item id="createDate" cell="J1:N1">作成日</item>
+            <item id="createDate" cell="J2:N2"></item>
+            <item id="creator" cell="O1:U1">作成者</item>
+            <item id="creator" cell="O2:U2"></item>
+        </fixdSection>
+        <tableSection startCell="">
+            <header>
+                <item rangeWidth="5" rangeHeight="1">分類</item>
+                <item rangeWidth="5" rangeHeight="1">確認項目</item>
+                <item rangeWidth="5" rangeHeight="1">補足</item>
+                <item rangeWidth="2" rangeHeight="1">実施者</item>
+                <item rangeWidth="2" rangeHeight="1">実施日</item>
+                <item rangeWidth="2" rangeHeight="1">合否</item>
+            </header>
+            <body>
+                <item rangeWidth="5" rangeHeight="1" />
+                <item rangeWidth="5" rangeHeight="1" />
+                <item rangeWidth="5" rangeHeight="1" />
+                <item rangeWidth="2" rangeHeight="1" />
+                <item rangeWidth="2" rangeHeight="1" />
+                <item rangeWidth="2" rangeHeight="1" />
+            </body>
+        </tableSection>
+    </layout>
+    <import>
+        <book name="hoge">
+            <sheet src="C:\Users\Tokoi\Tokoi\projects\private\markdownToTestCase\mindNote.md" layout="top" />
+            <sheet src="C:\Users\Tokoi\Tokoi\projects\private\markdownToTestCase\mindNote2.md" layout="top" />
+        </book>
+    </import>
+    <output src="C:\Users\Tokoi\Tokoi\projects\private\markdownToTestCase" />
+    
+</MarkdownToExcel>
